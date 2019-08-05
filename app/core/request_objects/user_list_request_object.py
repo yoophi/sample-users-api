@@ -5,6 +5,10 @@ class UserListRequestObject(object):
 
 
 class UserCreateRequestObject:
+    def __init__(self, email: str, password: str):
+        self.email = email
+        self.password = password
+
     @classmethod
     def from_dict(cls, adict):
-        return cls()
+        return cls(**adict)
