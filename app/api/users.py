@@ -3,7 +3,7 @@ from flask_restful import Api, Resource
 
 from app.core.base.typings import UserInputData
 from app.adaptors.user_adaptor import UserAdaptor
-from app.repository import current_repo
+from app.repositories import current_repo
 from . import api
 
 
